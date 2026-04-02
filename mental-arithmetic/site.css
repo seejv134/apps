@@ -1,0 +1,185 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #e0e0e0;
+  --bg: #fafafa;
+  --accent: #0066cc;
+  --max: 720px;
+  --narrow: 600px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.65;
+  background: var(--bg);
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 24px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav a[aria-current="page"] {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.main.narrow {
+  max-width: var(--narrow);
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  flex: 1 1 240px;
+}
+
+.hero-figure {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.hero-figure img {
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.cards .steps {
+  padding-left: 1.25rem;
+}
+
+.cards .steps li {
+  margin-bottom: 0.5rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.gallery img {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.links-grid {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.link-list {
+  padding-left: 1.25rem;
+}
+
+.link-list a {
+  color: var(--accent);
+}
+
+.faq dt {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.faq dd {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.note code {
+  font-size: 0.85em;
+}
+
+.inline-figure {
+  margin: 2rem 0 0;
+}
+
+.inline-figure img {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.site-footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.main.narrow + .site-footer {
+  max-width: var(--narrow);
+}
